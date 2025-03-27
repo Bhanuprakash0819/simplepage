@@ -27,10 +27,10 @@ const App = () => {
         <nav className={`nav-links ${isMobile && !isOpen ? 'hidden' : ''}`}>
           <Link to='/dashboard' className='dash' onClick={closeMenu}>Dashboard</Link>
           <Link to='/categories' className='dash' onClick={closeMenu}>Categories</Link>
-          <Link to='/inventory' className='dash' onClick={closeMenu}>Inventory</Link>
-          <Link to='/orders' className='dash' onClick={closeMenu}>Orders</Link>
-          <Link to='/payments' className='dash' onClick={closeMenu}>Payments</Link>
-          <Link to='/support' className='dash' onClick={closeMenu}>Support</Link>
+          <Link to='/dashboard' className='dash' onClick={closeMenu}>Inventory</Link>
+          <Link to='/dashboard' className='dash' onClick={closeMenu}>Orders</Link>
+          <Link to='/dashboard' className='dash' onClick={closeMenu}>Payments</Link>
+          <Link to='/dashboard' className='dash' onClick={closeMenu}>Support</Link>
         </nav>
       </div>
     </div>
