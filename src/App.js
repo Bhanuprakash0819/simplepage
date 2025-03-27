@@ -9,8 +9,8 @@ function App() {
     <Router>
       <Nav/>
       <Routes>
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/categories" element={<Categories />} />
+      <Route path="dashboard" element={<Dashboard />} />
+      <Route path="categories" element={<Categories />} />
       </Routes>
    </Router>
   );
