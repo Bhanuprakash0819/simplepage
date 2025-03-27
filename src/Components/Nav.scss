@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     gap: 10px;
 
-    a {
+    .dash {
       text-decoration: none;
       color: #333;
       font-weight: 600;
@@ -76,7 +76,7 @@ body {
       display: none;
     }
 
-    .nav-links a {
+    .nav-links .dash {
       display: block;
       background-color: transparent;     
       padding: 10px;

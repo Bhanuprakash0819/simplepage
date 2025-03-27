@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Nav.scss";
-
+import { Link } from 'react-router-dom';
 const App = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isOpen, setIsOpen] = useState(false);
@@ -21,12 +21,12 @@ const App = () => {
           </button>
         )}
         <nav className={`nav-links ${isMobile && !isOpen ? 'hidden' : ''}`}>
-          <a href='/dashboard' className='dash'>Dashboard</a>
-          <a href='/categories' className='dash'>Categories</a>
-          <a href='#inventory' className='dash'>Inventory</a>
-          <a href='#orders' className='dash'>Orders</a>
-          <a href='#payments' className='dash'>Payments</a>
-          <a href='#helpline' className='dash'>Helpline</a>
+          <Link to='/dashboard' className='dash'>Dashboard</Link>
+          <Link to='/categories' className='dash'>Categories</Link>
+          <Link to='/dashboard' className='dash'>Inventory</Link>
+          <Link to='/dashboard' className='dash'>Orders</Link>
+          <Link to='/dashboard' className='dash'>Payments</Link>
+          <Link to='/dashboard' className='dash'>Support</Link>
         </nav>
       </div>
     </div>
