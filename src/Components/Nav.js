@@ -21,8 +21,8 @@ const App = () => {
           </button>
         )}
         <nav className={`nav-links ${isMobile && !isOpen ? 'hidden' : ''}`}>
-          <a href='dashboard' className='dash'>Dashboard</a>
-          <a href='categories' className='dash'>Categories</a>
+          <a href='/dashboard' className='dash'>Dashboard</a>
+          <a href='/categories' className='dash'>Categories</a>
           <a href='#inventory' className='dash'>Inventory</a>
           <a href='#orders' className='dash'>Orders</a>
           <a href='#payments' className='dash'>Payments</a>
